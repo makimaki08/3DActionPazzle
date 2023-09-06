@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: 417941871}
   - component: {fileID: 417941870}
   - component: {fileID: 417941874}
+  - component: {fileID: 417941875}
   m_Layer: 0
   m_Name: BlockGreen
   m_TagString: Untagged
@@ -361,6 +362,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &417941875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417941869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50bac29da57b493b91105205a4635b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenBlocksPrefab: {fileID: 417941869}
+  hardness: 5
 --- !u!1 &673985123
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +389,7 @@ GameObject:
   - component: {fileID: 673985126}
   - component: {fileID: 673985125}
   - component: {fileID: 673985124}
+  - component: {fileID: 673985129}
   m_Layer: 0
   m_Name: BlockRed
   m_TagString: Untagged
@@ -494,6 +510,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &673985129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673985123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f2da4361ec249f194108f7a180fa29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +721,7 @@ GameObject:
   - component: {fileID: 1224118691}
   - component: {fileID: 1224118690}
   - component: {fileID: 1224118689}
+  - component: {fileID: 1224118694}
   m_Layer: 0
   m_Name: BlockBlue
   m_TagString: Untagged
@@ -813,3 +842,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1224118694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224118688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebcf5f96b0d3143f491aa34e519bd557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 60
